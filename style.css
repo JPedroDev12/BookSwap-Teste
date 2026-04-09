@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    padding: 0px 5vw 0px 5vw;
+}
+
+.header-icon {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.header-icon img{
+    width: auto;
+    height: 5vw;
+}
+
+.navbar-header ul {
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+}
+.navbar-header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4vw;
+    border: solid 2px #D2CACA;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;  
+  gap: 2vw;
+}
+
+.container-login p {
+    color: white;
+}
+
+.container-login a {
+    color: #3fc6ff;
+}
+
+.login {
+    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #2C5364;
+    padding: 2vw 5vw 2vw 5vw;
+    border-radius: 15px;
+    border: solid 2px #203A43;
+}
+
+.form-login {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.form-login input {
+    padding: 10px 50px 10px 10px;
+    border-radius: 15px;
+}
+
+.btn-form {
+    background-color: #3bafe0;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.container-logo img {
+    width: 15vh;
+}
