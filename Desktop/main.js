@@ -1,5 +1,3 @@
-require('ts-node').register()
-
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 const db = require('./db.ts')
@@ -10,22 +8,27 @@ function createWindow(){
     win = new BrowserWindow({
         width: 900,
         height: 700,
-        webPreferences:{
+        webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
     })
-    win.loadFile('Desktop/index.html')
+
+    win.loadFile('login.html')
 }
 
 app.whenReady().then(createWindow)
 
-ipcMain.handle('login', async (e, data) => {
-    let u = await db.findUser(data)
-    if(!u) return { ok: false }
+ipcMain.handle('login', (e, data) => {
+    let user = db.findUser(data)
+
+    if(!user){
+        return { ok: false }
+    }
+
     return { ok: true }
 })
 
-ipcMain.handle('register', async (e, data) => {
-    let ok = await db.createUser(data)
+ipcMain.handle('register', (e, data) => {
+    let ok = db.createUser(data)
     return { ok }
 })

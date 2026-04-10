@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/bookswap.png" type="image/x-icon">
+    <title>BookSwap - Home</title>
+</head>
+<body>
+
+    <header class="header-page">
+
+        <div class="header-icon">
+            <img src="img/bookswap.png" alt="">
+            <p class="title-header">Book<br>Swap</p>
+        </div>
+
+        <nav class="navbar-header">
+            <ul>
+                <li><a href="#">Swapping</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="login-btn" onclick="logout()">
+            Sair
+        </a>
+    </header>
+
+    <div class="container-login">
+        <div class="login">
+
+            <div class="container-logo">
+                <img src="img/bookswap.png" alt="">
+                <p>Bem-vindo!</p>
+            </div>
+
+            <div style="text-align: center; color: white;">
+                <h2>Você está logado 🎉</h2>
+                <p id="user-email">email aqui</p>
+
+                <br>
+
+                <button class="btn-form" onclick="logout()">
+                    Sair da conta
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
