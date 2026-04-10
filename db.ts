@@ -12,7 +12,6 @@ const db = knex({
 })
 
 export async function createUser(user: any){
-    // verifica duplicata pelo campo que foi preenchido
     let exist
 
     if(user.email){

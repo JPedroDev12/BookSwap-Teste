@@ -8,7 +8,6 @@ async function cadastrar(){
         return
     }
 
-    // detecta se é email ou cpf pelo @
     let email = ""
     let cpf = ""
 

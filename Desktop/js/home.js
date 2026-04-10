@@ -1,4 +1,3 @@
-// ERRO CAIXA BRANCA: usa var ao invés de let/const
 var email = localStorage.getItem("user")
 
 if(!email){
